@@ -1,0 +1,5 @@
+D:\JT\CoreProgramm\Blog\.NET Core\QRCodeBitmap\QRCodeBitmap\obj\Debug\netcoreapp2.1\QRCodeBitmap.csprojAssemblyReference.cache
+D:\JT\CoreProgramm\Blog\.NET Core\QRCodeBitmap\QRCodeBitmap\obj\Debug\netcoreapp2.1\QRCodeBitmap.RazorAssemblyInfo.cache
+D:\JT\CoreProgramm\Blog\.NET Core\QRCodeBitmap\QRCodeBitmap\obj\Debug\netcoreapp2.1\QRCodeBitmap.RazorAssemblyInfo.cs
+D:\JT\CoreProgramm\Blog\.NET Core\QRCodeBitmap\QRCodeBitmap\obj\Debug\netcoreapp2.1\QRCodeBitmap.AssemblyInfoInputs.cache
+D:\JT\CoreProgramm\Blog\.NET Core\QRCodeBitmap\QRCodeBitmap\obj\Debug\netcoreapp2.1\QRCodeBitmap.AssemblyInfo.cs

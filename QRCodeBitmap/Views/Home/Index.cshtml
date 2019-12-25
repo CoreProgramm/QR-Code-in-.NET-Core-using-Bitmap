@@ -1,0 +1,54 @@
+﻿@model Byte[]
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width" />
+<title>Index</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+@*<link href="~/css/cover.css" rel="stylesheet" />*@
+@section Scripts{
+
+}
+<form asp-action="Index" asp-controller="Home" asp-antiforgery="true">
+    <div class="container">
+        <div class="panel-group">
+            <div class="panel panel-info">
+                <div class="panel-heading">Generate QR Code</div>
+                <div class="panel-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-3">Type text to generate QR Code</div>
+                            <div class="col-md-9"><input type="text" class="form-control" id="txtQRCode" name="txtQRCode" /></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-9">
+                                <input type="submit" class="btn btn-primary" id="btnSubmit" value="Generate QR Code" autocomplete="off" />
+                            </div>
+                        </div>
+                    </div>
+                    @{
+                        if (Model != null)
+                        {
+                            <div class="row mt-3">
+                                <div class="col-md-12">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-9">
+                                        <img src="@String.Format("data:image/png;base64,{0}", Convert.ToBase64String(Model))"  height="300" width="300"/>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
